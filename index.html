@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bunthoeun Chanpanha · Web Developer</title>
+  <meta name="description" content="Portfolio of Bunthoeun Chanpanha, a Software Development student at Norton University in Cambodia, building full-stack projects with React, Node.js and databases.">
+  <meta property="og:title" content="Bunthoeun Chanpanha · Web Developer">
+  <meta property="og:description" content="Software Development student at Norton University, studying full-stack web development.">
+  <meta property="og:image" content="images/profile.jpg">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><rect width='64' height='64' rx='32' fill='%231F3BFF'/><text x='50%25' y='56%25' dominant-baseline='middle' text-anchor='middle' font-family='Arial Black,Arial' font-weight='900' font-size='26' fill='white'>P.</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..900&family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600&display=swap">
+  <link rel="stylesheet" href="style.css">
+  <!-- Applies your saved light/dark choice before the page draws, so it doesn't flash -->
+  <script>document.documentElement.classList.add('js'); try { var t = localStorage.getItem('theme'); if (t) document.documentElement.dataset.theme = t; } catch (e) {}</script>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <!-- ===== TOP BAR ===== -->
+  <header class="topbar">
+    <nav class="wrap nav" aria-label="Main">
+      <a class="logo" href="#top">PANHA.</a>
+      <button class="mode" id="theme-toggle" aria-label="Switch light or dark mode">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20h4L19 9l-4-4L4 16v4ZM13.5 6.5l4 4"/></svg>
+        Change the mode
+      </button>
+      <button class="burger" id="menu-btn" aria-label="Open menu" aria-expanded="false" aria-controls="menu"><i></i><i></i></button>
+    </nav>
+  </header>
+
+  <!-- Full-screen menu (opens from the two-line button) -->
+  <div class="overlay" id="menu">
+    <ul class="wrap">
+      <li><a href="#skills"><span>01</span>Skills</a></li>
+      <li><a href="#about"><span>02</span>About</a></li>
+      <li><a href="#projects"><span>03</span>Projects</a></li>
+      <li><a href="#contact"><span>04</span>Contact</a></li>
+    </ul>
+    <p class="wrap overlay-foot">cpanha683@gmail.com · Cambodia, GMT+7</p>
+  </div>
+
+  <main id="main">
+
+    <!-- ===== HERO ===== -->
+    <section class="hero wrap" id="top">
+      <h1 class="hero-title">
+        <span class="sr-only">Bunthoeun Chanpanha, </span>
+        <span class="line1 reveal"><em>I'm a</em><em>full-stack</em></span>
+        <span class="line2 reveal">DEVELOPER</span>
+      </h1>
+
+      <!-- YOUR PHOTO: images/profile.jpg is used now.
+           For the "standing in front of the text" look, remove the background from your photo
+           (for example on remove.bg), save it as images/profile-cutout.png, and it switches automatically. -->
+      <div class="hero-photo reveal">
+        <img id="hero-img" src="images/profile.jpg" alt="Photo of Bunthoeun Chanpanha">
+      </div>
+
+      <div class="hero-bottom">
+        <p class="hero-left reveal">Bunthoeun Chanpanha. Software Development student at Norton University, studying full-stack web development.</p>
+        <a class="btn blue chat reveal" href="#contact">Let's chat</a>
+        <p class="hero-right reveal">Building full-stack projects with React, Node.js and databases, one project at a time. Open to internships.</p>
+      </div>
+    </section>
+
+    <!-- ===== SKILLS (blue band) ===== -->
+    <section class="band" id="skills">
+      <div class="wrap">
+        <div class="band-top">
+          <h2 class="title reveal"><span class="wide">ALL MY</span><span class="serif">tech skills</span></h2>
+          <div class="band-side reveal">
+            <p>Frontend, backend and the languages I work in, all in one place. Try dragging the pills.</p>
+            <a class="btn white" href="#projects">See my work</a>
+          </div>
+        </div>
+
+        <!-- EDIT THIS: add or remove skills. --x / --y place each pill, --r tilts it -->
+        <div class="pills" id="pills" aria-label="Skills">
+          <span class="pill" style="--x:1%;  --y:0px;   --r:-4deg">HTML</span>
+          <span class="pill" style="--x:15%; --y:6px;   --r:7deg">CSS</span>
+          <span class="pill" style="--x:29%; --y:0px;   --r:-2deg">JavaScript</span>
+          <span class="pill" style="--x:50%; --y:4px;   --r:4deg">React</span>
+          <span class="pill" style="--x:64%; --y:0px;   --r:-6deg">Node.js</span>
+          <span class="pill" style="--x:80%; --y:8px;   --r:3deg">Databases</span>
+          <span class="pill" style="--x:5%;  --y:76px;  --r:-12deg">Full-Stack</span>
+          <span class="pill" style="--x:22%; --y:90px;  --r:9deg">Responsive Design</span>
+          <span class="pill" style="--x:47%; --y:80px;  --r:-8deg">APIs</span>
+          <span class="pill" style="--x:61%; --y:96px;  --r:13deg">English</span>
+          <span class="pill" style="--x:78%; --y:84px;  --r:-9deg">Khmer</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== ABOUT ===== -->
+    <section class="wrap block" id="about">
+      <h2 class="title reveal"><span class="wide">ABOUT</span><span class="serif">me</span></h2>
+      <div class="about">
+        <!-- EDIT THIS: write a few sentences about yourself in your own words -->
+        <div class="about-text reveal">
+          <p class="big">I'm a student at Norton University in Cambodia, majoring in Software Development, and I like turning ideas into things people can actually click on.</p>
+          <p>I'm studying full-stack web development and work across the whole stack: building interfaces in React, writing server logic in Node.js, and storing data in databases. Every project teaches me something new, and I'm looking for an internship where I can learn from a real team and ship real work.</p>
+          <!-- Quick numbers. Update them as you grow -->
+          <ul class="stats">
+            <li><b>6</b><span>technologies</span></li>
+            <li><b>1</b><span>project shipped</span></li>
+            <li><b>2</b><span>languages spoken</span></li>
+          </ul>
+        </div>
+        <dl class="facts reveal">
+          <div><dt>University</dt><dd>Norton University</dd></div>
+          <div><dt>Major</dt><dd>Software Development</dd></div>
+          <div><dt>Studying</dt><dd>Full-stack web development - SalaIT</dd></div>
+          <div><dt>Based in</dt><dd>Cambodia</dd></div>
+          <div><dt>Speaks</dt><dd>English, Khmer</dd></div>
+          <div><dt>Status</dt><dd class="open"><i></i>Open to internships</dd></div>
+        </dl>
+      </div>
+    </section>
+
+    <!-- ===== PROJECTS ===== -->
+    <section class="wrap block" id="projects">
+      <h2 class="title reveal"><span class="wide">SELECTED</span><span class="serif">work</span></h2>
+      <div class="projects">
+        <!-- EDIT THIS: your project's name, description, tech and links.
+             SCREENSHOT: save a picture of your project as images/project1.jpg and it shows up automatically -->
+        <article class="feature reveal">
+          <div class="preview">
+            <div class="placeholder"><span>Grand Hotel</span></div>
+            <img src="images/project1.jpg" alt="Screenshot of the Grand Hotel management system" onerror="this.remove()">
+          </div>
+          <div class="feature-body">
+            <span class="tag">Featured project · 01</span>
+            <h3>Grand Hotel Management System</h3>
+            <p>A full-stack hotel management system for handling rooms, guests and bookings in one place. Building it taught me how to connect a React interface to a Node.js backend and a database, and how to deploy a real app to the web.</p>
+            <div class="stack"><span>React</span><span>Node.js</span><span>Database</span></div>
+            <div class="links">
+              <a class="btn blue" href="https://hotel-management-system-jet-rho.vercel.app/" target="_blank" rel="noopener">Live demo ↗</a>
+              <!-- Add your GitHub repo link here, then uncomment:
+              <a class="btn outline" href="https://github.com/YOUR-USERNAME/YOUR-REPO" target="_blank" rel="noopener">Source code</a> -->
+            </div>
+          </div>
+        </article>
+        <div class="next">
+          <div class="slot reveal"><span class="slot-num">02</span><b><em>Next</em> project</b><span>Currently planning. Coming soon.</span></div>
+          <div class="slot reveal"><span class="slot-num">03</span><b><em>Project</em> three</b><span>On the roadmap.</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== CONTACT (blue band) ===== -->
+    <section class="band contact-band" id="contact">
+      <div class="wrap">
+        <div class="band-top">
+          <h2 class="title reveal"><span class="wide">LET'S</span><span class="serif">talk</span></h2>
+          <div class="band-side reveal">
+            <p>Open to internships, collaborations and junior roles. The fastest way to reach me is email.</p>
+            <a class="btn white" href="mailto:cpanha683@gmail.com">Send an email</a>
+          </div>
+        </div>
+        <a class="big-mail reveal" href="mailto:cpanha683@gmail.com">cpanha683@gmail.com</a>
+        <div class="contact reveal">
+          <div class="card">
+            <span class="label" id="email-label">Email</span>
+            <div class="row"><span class="val" id="email-val">cpanha683@gmail.com</span><button class="copy" data-target="email-val" aria-describedby="email-label">Copy</button></div>
+          </div>
+          <div class="card">
+            <span class="label" id="phone-label">Phone</span>
+            <div class="row"><a class="val" id="phone-val" href="tel:+85510679527">010 679 527</a><button class="copy" data-target="phone-val" aria-describedby="phone-label">Copy</button></div>
+          </div>
+        </div>
+        <footer>
+          <span>© <span id="year">2026</span> Bunthoeun Chanpanha</span>
+          <a href="#top">Back to top ↑</a>
+        </footer>
+      </div>
+    </section>
+  </main>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
